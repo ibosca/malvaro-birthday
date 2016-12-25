@@ -6,7 +6,7 @@ if(!isset($_COOKIE["countdown"])){
 }
 
 function handler() {
-
+    //Antiga creació de data per al aniversari real!
     //$birthday = new DateTime('2016-12-17', new DateTimeZone('Europe/Berlin'));
     $birthday = new DateTime('', new DateTimeZone('Europe/Berlin'));
     $birthday->add(new DateInterval('PT15S'));

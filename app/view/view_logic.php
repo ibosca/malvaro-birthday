@@ -1,6 +1,6 @@
 <?php
 
-function return_view($event, $seconds) {
+function return_view($event, $seconds = 0) {
 
     $replacement = get_replacement($event, $seconds);
     $html = get_media('html', 'base');
