@@ -1,0 +1,9 @@
+DirectoryIndex public/index.php
+RewriteEngine on
+
+#Si la ruta que em demanat existeix anirà, sino... anira a index.php; util per als recursos com imatges!
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ public/index.php
+#Evitar llistar continguts
+Options -Indexes
